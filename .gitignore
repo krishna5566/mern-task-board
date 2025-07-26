@@ -1,0 +1,19 @@
+# .gitignore
+
+# Node.js
+/backend/node_modules
+/backend/.env
+
+# React
+/frontend/node_modules
+/frontend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploads folder (optional)
+backend/uploads/
