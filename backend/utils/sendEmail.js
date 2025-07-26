@@ -3,9 +3,9 @@ const nodemailer = require("nodemailer");
 
 const sendEmail = async ({ to, subject, html }) => {
   const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,         // 👈 Ethereal or other host
-    port: process.env.EMAIL_PORT,         // 587 for Ethereal
-    secure: false,                        // false for TLS (Ethereal)
+    host: process.env.EMAIL_HOST,      
+    port: process.env.EMAIL_PORT,    
+    secure: false,                      
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
