@@ -58,10 +58,10 @@ const onDragEnd = async (result) => {
   try {
     await api.put("/tasks/drag", {
       taskId: draggableId,
-      sourceBoardId: source.droppableId,
+      // sourceBoardId: source.droppableId,
       destinationBoardId: destination.droppableId,
-      sourceIndex: source.index,
-      destinationIndex: destination.index,
+      // sourceIndex: source.index,
+      // destinationIndex: destination.index,
     });
     fetchBoards();
   } catch (err) {
